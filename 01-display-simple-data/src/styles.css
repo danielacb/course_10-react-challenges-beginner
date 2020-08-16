@@ -11,32 +11,31 @@ body {
 }
 
 .user-deets {
-  position: absolute;
-  top: calc(50% - 60px);
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #F1F5F9;
-  display: flex;
   border-radius: 8px;
-  box-shadow: 0px 2px 80px rgba(5, 57, 150, 0.1);
   border: 1px solid rgba(57, 109, 210, 0.2);
+  box-shadow: 0px 2px 80px rgba(5, 57, 150, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto 130px;
+  max-width: 560px;
+  overflow: hidden;
+  width: calc(100% - 48px);
 }
 
 .user-deets .img-container {
-  width: 240px;
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
+  height: 240px;
   overflow: hidden;
   position: relative;
 }
 
 .user-deets .img-container img {
-  height: 100%;
+  left: 50%;
   opacity: 1.2;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .user-deets .card {
@@ -44,14 +43,14 @@ body {
 }
 
 .user-deets h1 {
-  font-size: 24px;
   color: #0E285C;
+  font-size: 24px;
   margin: 0;
 }
 
 .user-deets a {
-  text-decoration: none;
   color: #0047CE;
+  text-decoration: none;
   transition: 0.3s ease color;
 }
 
@@ -62,28 +61,52 @@ body {
 .user-deets hr {
   border-bottom: none;
   border-top: 1px solid #DFE1E4;
-  width: calc(100% + 48px);
-  margin: 32px 0 16px -24px;
+  margin: 32px 0 16px -32px;
+  width: calc(100% + 64px);
 }
 
 .user-deets h2 {
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: normal;
-  margin: 2px 0 16px;
   color: rgba(14, 40, 92, 0.9);
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+  margin: 2px 0 16px;
 }
 
 .user-deets strong {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
   color: rgba(65, 77, 101, 0.6);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  line-height: 14px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .user-deets .info:nth-of-type(-n+2) {
-  margin-right: 32px;
   display: inline-block;
+  margin-right: 32px;
+}
+
+
+@media (min-width: 481px) {
+  .user-deets {
+    flex-direction: row;
+    left: 50%;
+    margin-bottom: 0;
+    position: absolute;
+    top: calc(50% - 60px);
+    transform: translate(-50%, -50%);
+  }
+
+  .user-deets .img-container {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    height: auto;
+    width: 240px;
+  }
+
+  .user-deets .img-container img {
+    height: 100%;
+    width: auto;
+  }
 }
