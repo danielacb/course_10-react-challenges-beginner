@@ -8,14 +8,14 @@ import './styles.css';
  * ------------------------
  */
 const user = {
-  name: 'Chris on Code',
-  location: 'Las Vegas',
-  foodType: 'Everything',
+  name: 'Daniela C. Barbosa',
+  location: 'Goiânia, GO - Brazil',
+  foodType: 'Everything but pineapple and kiwifruit',
   age: 28,
-  likes: 'Coding into the wee hours of the morning',
-  twitterUsername: 'chrisoncode',
+  likes: 'Dogs and sports',
+  twitterUsername: 'dnlbrbs',
   avatar:
-    'https://scotch-res.cloudinary.com/image/upload/v1556479698/xRZsnhr0_400x400_cpyg2t.png'
+    '/profile-danielacbaborsa.jpg'
 };
 
 /**
@@ -25,8 +25,34 @@ const user = {
 function App() {
   return (
     <div className="App">
-      {/* Show user data here */}
-      <div className="user-deets">display user info here. happy coding!</div>
+      <div className="user-deets">
+        <div className="img-container">
+          <img src={user.avatar} alt={user.name} />
+        </div>
+        <div className="card">
+          <h1>{user.name}</h1>
+          <a href={`https://twitter.com/${user.twitterUsername}`} target="_blank">@{user.twitterUsername}</a>
+          <hr />
+          <div className="info">
+            <strong>Age</strong>
+            <h2>{user.age}</h2>
+          </div>
+          <div className="info">
+            <strong>Location</strong>
+            <h2>{user.location}</h2>
+          </div>
+          <div className="info">
+            <strong>Eats</strong>
+            <h2>{user.foodType}</h2>
+          </div>
+          <div className="info">
+            <strong>Likes</strong>
+            <h2>{user.likes}</h2>
+          </div>
+
+        </div>
+
+      </div>
 
       <ScotchInfoBar />
     </div>

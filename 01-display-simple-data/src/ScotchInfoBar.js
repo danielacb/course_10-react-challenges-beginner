@@ -5,14 +5,15 @@ export default function ScotchInfoBar() {
     <div
       style={{
         position: 'fixed',
-        top: '0',
+        bottom: '0',
         left: '0',
         right: '0',
         fontSize: '14px',
         padding: '20px 10px',
         background: '#333',
         color: '#bbb',
-        letterSpacing: '0.5px'
+        letterSpacing: '0.5px',
+        textAlign: 'center'
       }}
     >
       Scotch.io Code Challenges!{' '}
