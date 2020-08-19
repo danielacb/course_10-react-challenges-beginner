@@ -27,7 +27,7 @@ export default function ScotchInfoBar() {
           borderBottom: '2px solid #40A8F3'
         }}
       >
-        Day 1 of #10DaysOfReact
+        Day 2 of #10DaysOfReact
       </a>
     </div>
   );
