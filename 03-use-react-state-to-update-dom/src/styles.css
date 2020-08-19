@@ -1,18 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: #DFE1E4;
+  margin: 0;
+}
+
 .App {
-  font-family: sans-serif;
+  color: #0E285C;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
-.input-display,
-.inputs {
+h2 {
+  font-family: 36px;
+  margin-top: 60px;
+}
+
+.input-display {
+  background: #F1F5F9;
+  border-radius: 8px;
+  border: 1px solid rgba(57, 109, 210, 0.2);
+  box-shadow: 0px 10px 80px rgba(5, 57, 150, 0.1);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 20px;
+  padding: 24px 32px;
   text-align: left;
+}
+
+.input-display p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.input-display p:nth-child(2) {
+  color: #0047CE;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 2px 0 0;
+}
+
+.inputs {
   margin: 20px;
 }
 
-.input {
-  padding: 10px;
+input {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  border: 1px solid rgba(57, 109, 210, 0.2);
+  box-sizing: border-box;
+  color: rgba(65, 77, 101, 0.8);
+  font-size: 14px;
+  margin-right: 12px;
+  margin-top: 4px;
+  outline: none;
+  padding: 12px 16px;
+  width: calc(100% - 12px);
 }
 
-.subtitle {
-  margin-top: 80px;
+input:hover {
+  border: 1px solid rgba(57, 109, 210, 0.8);
+  cursor: text;
+}
+
+input:focus {
+  background: #FFFFFF;
+  border: 1px solid rgba(57, 109, 210, 0.8);
+  color: #0E285C;
+}
+
+.field {
+  margin: 14px auto;
+  width: 290px;
+}
+
+label {
+  color: rgba(65, 77, 101, 0.6);
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
 }

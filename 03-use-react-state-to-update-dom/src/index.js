@@ -9,27 +9,27 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h2 className="subtitle is-4">Update Data from an input</h2>
+        <h2>Update Data from an input</h2>
       </div>
 
       {/* Display Data */}
       <div className="input-display">
-        <p>Display Name: </p>
-        <p>Display Age: </p>
+        <p>Display Name</p>
+        <p>Age</p>
       </div>
 
       {/* Collect User Inputs */}
       <div className="inputs">
         {/* Input name */}
         <div className="field">
-          <label className="label">Name: </label>
-          <input className="input" type="text" placeholder="William" />
+          <label>Name: </label>
+          <input type="text" placeholder="William" />
         </div>
 
         {/* Input age */}
         <div className="field">
-          <label className="label">Age: </label>
-          <input className="input" type="number" placeholder="38" />
+          <label>Age: </label>
+          <input type="number" placeholder="38" />
         </div>
       </div>
       <ScotchInfoBar seriesNumber="3" />
