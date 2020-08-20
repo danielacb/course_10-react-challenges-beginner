@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 import ScotchInfoBar from "./ScotchInfoBar";
 
 function App() {
   // MOST OF YOUR CODE GOES HERE
-
+  const [name, setName] = useState("Clark Kent");
+  const [age, setAge] = useState("22");
   return (
     <div className="App">
       <div>
@@ -14,8 +15,8 @@ function App() {
 
       {/* Display Data */}
       <div className="input-display">
-        <p>Display Name</p>
-        <p>Age</p>
+        <p>{name}</p>
+        <p> {age} years old</p>
       </div>
 
       {/* Collect User Inputs */}
@@ -23,13 +24,13 @@ function App() {
         {/* Input name */}
         <div className="field">
           <label>Name: </label>
-          <input type="text" placeholder="William" />
+          <input type="text" placeholder={name} onChange={e => setName(e.target.value)} />
         </div>
 
         {/* Input age */}
         <div className="field">
           <label>Age: </label>
-          <input type="number" placeholder="38" />
+          <input type="number" placeholder={age} onChange={e => setAge(+e.target.value)} />
         </div>
       </div>
       <ScotchInfoBar seriesNumber="3" />
