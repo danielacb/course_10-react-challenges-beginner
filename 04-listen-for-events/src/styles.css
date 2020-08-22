@@ -1,35 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  background: #00bf6a;
-  color: #fff;
-  height: 100vh;
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-h2 {
-  padding-top: 100px;
-  margin-bottom: 30px;
-  font-size: 24px;
+.App {
+  background: #1A2131;
+  color: #EDEDED;
+  font-family: 'Alegreya', serif;
+  font-family: sans-serif;
+  height: 100vh;
+  text-align: center;
+}
+
+img {
+  height: 40vh;
+  margin: 5vh 0;
+  opacity: 0.05;
+  transition: 1.2s ease-out;
+}
+
+img.open {
+  height: 60vh;
+  opacity: 1;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0 auto;
+  max-width: 470px;
+  padding: 0 20px;
+}
+
+h1.open {
+  animation: opacity 1.2s ease-out;
 }
 
 input {
-  padding: 12px 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 18px;
-  min-width: 400px;
-}
-
-p {
-  margin-top: 12px;
-  font-size: 14px;
-}
-
-p strong {
+  background: rgba(237, 237, 237, 0.8);
+  border-radius: 3px;
+  border: none;
+  color: rgba(65, 77, 101, 0.8);
   font-size: 16px;
+  letter-spacing: 0.1px;
+  margin: 40px 0;
+  max-width: 280px;
+  padding: 12px 16px;
+  width: calc(100% - 40px);
+}
+
+input:focus {
+  background: rgba(237, 237, 237, 1);
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  img {
+    height: 30vh;
+  }
+
+  input {
+    width: calc(100% - 60px);
+  }
 }
