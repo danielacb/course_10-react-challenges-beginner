@@ -18,7 +18,7 @@ export default function ScotchInfoBar(props) {
     >
       Scotch.io Code Challenges!{" "}
       <a
-        href=""
+        href="https://scotch.io/courses/10-react-challenges-beginner/"
         style={{
           color: "#40A8F3",
           textDecoration: "none",
