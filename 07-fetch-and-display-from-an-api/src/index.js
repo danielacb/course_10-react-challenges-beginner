@@ -5,12 +5,16 @@ import "./styles.css";
 
 function App() {
   const [books, setBooks] = useState(null);
+  const [loading, setLoading] = useState(false);
+
   const apiURL = "https://www.anapioficeandfire.com/api/books?pageSize=30";
   function fetchData() {
     fetch(apiURL)
+      .then(setLoading(true))
       .then(resp => resp.json())
       .then(data => {
         setBooks(data);
+        setLoading(false);
       })
   }
 
@@ -28,6 +32,7 @@ function App() {
       {/* Display data from API */}
 
       {/* Use JSX below for each book */}
+      <div id="loader" className={loading ? 'on' : ''}></div>
       <div className="books">
         {books &&
           books.map((book, index) => {
@@ -48,7 +53,7 @@ function App() {
           })}
       </div>
       <ScotchInfoBar seriesNumber={7} />
-    </div>
+    </div >
   );
 }
 
