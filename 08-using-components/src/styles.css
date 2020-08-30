@@ -1,32 +1,44 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(222, 224, 228, 0.86);
 }
 
 .App {
-  font-family: sans-serif;
-  padding: 100px 40px 0;
-  background: hsl(197, 87%, 50%);
   color: hsl(197, 87%, 95%);
+  font-family: sans-serif;
   height: 100vh;
+  padding: 60px 40px 80px;
+}
+
+h2 {
+  color: #0E285C;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .stat-card {
-  background: #fff;
-  position: relative;
-  border-radius: 5px;
-  padding: 20px 30px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background: #F1F5F9;
+  border-radius: 8px;
+  border: 1px solid rgba(57, 109, 210, 0.2);
+  box-shadow: 0px 10px 80px rgba(5, 57, 150, 0.1);
   color: #333;
-  min-width: 50%;
-  margin-bottom: 15px;
+  margin: 0 auto 20px;
+  max-width: 400px;
+  padding: 20px 30px;
+  position: relative;
 }
 
 .stat-card .stat-line {
-  display: flex;
   align-items: center;
-  margin-bottom: 15px;
-  opacity: 0.7;
+  color: rgba(65, 77, 101, .9);
+  display: flex;
+  font-size: 24px;
 }
 
 .stat-card span {
@@ -35,6 +47,13 @@
 }
 
 .stat-card p {
-  font-size: 80px;
+  color: #0E285C;
+  font-size: 72px;
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 40px 16px 80px;
+  }
 }
