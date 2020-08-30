@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  background: rgba(222, 224, 228, 0.86);
+  color: #0E285C;
+}
+
 .App {
-  font-family: sans-serif;
-  margin-top: 83px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 83px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 42px;
 }
 
 .input-item {
@@ -10,13 +22,49 @@
 }
 
 .input {
-  width: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  border: 1px solid rgba(57, 109, 210, 0.2);
+  color: rgba(65, 77, 101, 0.8);
+  font-size: 14px;
+  max-width: 300px;
+  padding: 12px 16px;
+  transition: .4s;
+  width: calc(100% - 30px);
+}
+
+input:focus {
+  background: #FFFFFF;
+  border: 1px solid rgba(57, 109, 210, 0.8);
+  outline: none;
 }
 
 .user-form {
-  background: #f2f2f2;
-  border-radius: 10px;
-  padding: 10px 20px 20px;
-  margin-top: 30px;
   margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 0 0 20px;
+}
+
+.label,
+.is-size-4 strong {
+  color: rgba(65, 77, 101, 0.6);
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.card {
+  background: #F1F5F9;
+  border-radius: 8px;
+  border: 1px solid rgba(57, 109, 210, 0.2);
+  box-shadow: 0px 10px 80px rgba(5, 57, 150, 0.1);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 0 16px 20px;
+  }
 }
