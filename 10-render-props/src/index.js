@@ -44,6 +44,7 @@ function App() {
 
         {/* second card: has image in header */}
         <Card renderHeader={Image}>I am the second card</Card>
+        <Card renderHeader={Image} renderFooter={Button}>I am the third card</Card>
       </div>
 
       <ScotchInfoBar seriesNumber="10" />
