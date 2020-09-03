@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: #519bff;
+  padding: 85px 50px 50px;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 50%;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.card:not(:last-child) {
+  margin-right: 20px;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+  padding: 10px;
+}
+
+.card-header {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.card-header img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-footer {
+  border-top: 1px solid #e7e7e7;
+}
+
+.card-footer button {
+  background: #3fb27f;
+  width: 100%;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
