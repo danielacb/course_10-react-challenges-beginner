@@ -1,21 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import ScotchInfoBar from './ScotchInfoBar';
-import './styles.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import ScotchInfoBar from "./ScotchInfoBar";
+import "./styles.css";
 
 /**
  * Our data
  * ------------------------
  */
 const user = {
-  name: 'Daniela C. Barbosa',
-  location: 'Goiânia, GO - Brazil',
-  foodType: 'Everything but pineapple and kiwifruit',
+  name: "Daniela C. Barbosa",
+  location: "Goiânia, GO - Brazil",
+  foodType: "Everything but pineapple and kiwifruit",
   age: 28,
-  likes: 'Dogs and sports',
-  twitterUsername: 'dnlbrbs',
-  avatar:
-    '/profile-danielacbaborsa.jpg'
+  likes: "Dogs and sports",
+  twitterUsername: "dnlbrbs",
+  avatar: "/profile-danielacbaborsa.jpg",
 };
 
 /**
@@ -31,7 +30,13 @@ function App() {
         </div>
         <div className="card">
           <h1>{user.name}</h1>
-          <a href={`https://twitter.com/${user.twitterUsername}`} target="_blank">@{user.twitterUsername}</a>
+          <a
+            href={`https://twitter.com/${user.twitterUsername}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @{user.twitterUsername}
+          </a>
           <hr />
           <div className="info">
             <strong>Age</strong>
@@ -49,9 +54,7 @@ function App() {
             <strong>Likes</strong>
             <h2>{user.likes}</h2>
           </div>
-
         </div>
-
       </div>
 
       <ScotchInfoBar />
@@ -59,5 +62,5 @@ function App() {
   );
 }
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);

@@ -1,9 +1,19 @@
-# 10-react-challenges-beginner
+# Challenge 07: Fetch and Display from an API
 
-10 React Challenges (Beginner) from https://scotch.io/courses/10-react-challenges-beginner
+<p align="center">
+  <img alt="DOM Fetch and Display from an API" width="350" src="https://raw.githubusercontent.com/danielacb/course_10-react-challenges-beginner/master/images/07-fetch-and-display-from-an-api.png">
+</p>
 
-## To start the server you can run:
+The tasks in this challenge are:
 
-`npm start` or `yarn start`
+- Create a React state variable to hold data
+- Make the API request and store the data
+- Render the returned data
 
-Then open [http://localhost:3000/](http://localhost:3000/) to see the app.
+See the challenge description [here](https://scotch.io/courses/10-react-challenges-beginner/fetch-and-display-from-an-api).
+
+## Starting the server
+
+1. Install the dependencies: `npm install` or `yarn install`
+2. Start the server: `npm start` or `yarn start`
+3. Open [http://localhost:3000/](http://localhost:3000/) to see the app.

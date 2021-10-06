@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import ScotchInfoBar from './ScotchInfoBar';
-import './styles.css';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import ScotchInfoBar from "./ScotchInfoBar";
+import "./styles.css";
 
 function App() {
   const [top, setTop] = useState(450);
@@ -11,15 +11,23 @@ function App() {
   }
 
   const boxPosition = {
-    transform: `translateY(${top}px)`
-  }
+    transform: `translateY(${top}px)`,
+  };
 
   return (
     <div className="App">
       <h1>Move the Box!</h1>
 
       {/* handle the click event on this button */}
-      <button onClick={moveBoxUp}><span role="img" aria-label="move up">👆</span> Move Up <span role="img" aria-label="move up">👆</span></button>
+      <button onClick={moveBoxUp}>
+        <span role="img" aria-label="move up">
+          👆
+        </span>{" "}
+        Click me{" "}
+        <span role="img" aria-label="move up">
+          👆
+        </span>
+      </button>
 
       {/* move this box using inline styles */}
       <div className="box" style={boxPosition} />
@@ -29,5 +37,5 @@ function App() {
   );
 }
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);

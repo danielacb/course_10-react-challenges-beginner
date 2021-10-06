@@ -1,9 +1,13 @@
-# 10-react-challenges-beginner
+# Challenge 02: Loop Over an Array of Data
 
-10 React Challenges (Beginner) from https://scotch.io/courses/10-react-challenges-beginner
+<p align="center">
+  <img alt="Loop Over an Array of Data" width="400" src="https://raw.githubusercontent.com/danielacb/course_10-react-challenges-beginner/master/images/02-loop-over-an-array.png">
+</p>
 
-## To start the server you can run:
+See the challenge description [here](https://scotch.io/courses/10-react-challenges-beginner/loop-over-and-display-data-with-jsx).
 
-`npm start` or `yarn start`
+## Starting the server
 
-Then open [http://localhost:3000/](http://localhost:3000/) to see the app.
+1. Install the dependencies: `npm install` or `yarn install`
+2. Start the server: `npm start` or `yarn start`
+3. Open [http://localhost:3000/](http://localhost:3000/) to see the app.
